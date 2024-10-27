@@ -1,25 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_pf_strlen.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: joltmann <joltmann@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/07 20:14:26 by joltmann          #+#    #+#             */
-/*   Updated: 2024/10/10 15:22:07 by joltmann         ###   ########.fr       */
+/*   Created: 2024/10/07 20:22:33 by joltmann          #+#    #+#             */
+/*   Updated: 2024/10/27 16:14:31 by joltmann         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
 
 /**
- * Check if argument c passed as parameter is a valid value on the ascii table
- * Output is either 1 or 0 / true or false depending on the result
+ * gets passed a pointer to a string which canot be modified (const)
+ * iter. through string and counts chars; adds + 1 for NULL; returns count
  */
-int	ft_isascii(int c)
+int	ft_pf_strlen(const char *str)
 {
-	if (c >= 0 && c <= 127)
-		return (1);
-	else
-		return (0);
+	int	counter;
+
+	counter = 0;
+	while (*str)
+	{
+		counter = counter + 1;
+		str++;
+	}
+	return (counter);
 }

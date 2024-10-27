@@ -6,9 +6,7 @@ CFLAGS = -Wall -Wextra -Werror
 NAME = libftprintf.a
 
 # Source files list
-SRC =	libft/ft_itoa.c \
-		libft/ft_strlen.c \
-		ft_printf.c \
+SRC =	ft_printf.c \
 		ft_check_inputprintf.c \
 		ft_handle_specifier.c \
 		ft_handle_input_c.c \
@@ -18,7 +16,8 @@ SRC =	libft/ft_itoa.c \
 		ft_handle_input_u.c \
 		ft_handle_input_x.c \
 		ft_handle_input_xu.c \
-		ft_write_return_val.c
+		ft_write_return_val.c \
+		ft_pf_itoa.c ft_pf_strlen.c
 
 # Automatically generate object files list by replacing .c with .o
 OBJ = $(SRC:.c=.o)

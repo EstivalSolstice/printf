@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*   ft_pf_itoa.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: joltmann <joltmann@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 20:15:39 by joltmann          #+#    #+#             */
-/*   Updated: 2024/10/11 17:19:33 by joltmann         ###   ########.fr       */
+/*   Updated: 2024/10/27 16:14:16 by joltmann         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
 
 static void	ft_fill_str(char *str, unsigned int num, int i)
 {
@@ -42,7 +42,7 @@ static int	ft_num_len(int n)
  * recurs. filling str with digits; adding remainder with modulu 
  * turning them into char; returning the pointer to resulting str
  */
-char	*ft_itoa(int n)
+char	*ft_pf_itoa(int n)
 {
 	int				len;
 	char			*str;

@@ -6,7 +6,7 @@
 /*   By: joltmann <joltmann@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 13:21:40 by joltmann          #+#    #+#             */
-/*   Updated: 2024/10/12 19:49:20 by joltmann         ###   ########.fr       */
+/*   Updated: 2024/10/27 16:06:25 by joltmann         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,10 +32,10 @@ static int	ft_putnbr_safe(int n)
 	char	*num_str;
 	int		write_return_val;
 
-	num_str = ft_itoa(n);
+	num_str = ft_pf_itoa(n);
 	if (!num_str)
 		return (-1);
-	write_return_val = ft_write_return_val(1, num_str, ft_strlen(num_str));
+	write_return_val = ft_write_return_val(1, num_str, ft_pf_strlen(num_str));
 	free(num_str);
 	if (write_return_val == -1)
 		return (-1);
