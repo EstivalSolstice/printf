@@ -6,7 +6,7 @@
 /*   By: joltmann <joltmann@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 19:47:17 by joltmann          #+#    #+#             */
-/*   Updated: 2024/10/27 16:11:59 by joltmann         ###   ########.fr       */
+/*   Updated: 2024/11/14 11:57:08 by joltmann         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,8 @@
  * @brief   A simplified implementation of printf that handles format specifiers
  *          and prints formatted output to the standard output.
  *
- * @param fmt   The format string containing regular characters and specifiers.
-
-					* 				Additional arguments can be passed based on the format specifiers.
+ * @param fmt The format string containing regular characters and specifiers.
+ * Additional arguments can be passed based on the format specifiers.
  *
  * @return The number of characters printed, or -1 on error.
  */
